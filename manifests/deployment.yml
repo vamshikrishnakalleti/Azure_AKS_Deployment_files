@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: vamshikrishnakalletiazureaksdeploymentfiles 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vamshikrishnakalletiazureaksdeploymentfiles
+  template:
+    metadata:
+      labels:
+        app: vamshikrishnakalletiazureaksdeploymentfiles 
+    spec:
+      containers:
+        - name: vamshikrishnakalletiazureaksdeploymentfiles 
+          image: vigneshwarasacr.azurecr.io/vamshikrishnakalletiazureaksdeploymentfiles
+          ports:
+          - containerPort: 80
